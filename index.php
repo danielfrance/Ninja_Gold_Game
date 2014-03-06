@@ -47,7 +47,7 @@ session_start();
 								<h3 class="text-center">Farm</h3>
 								<h5 class="text-center">(Earns 10-20 Gold)</h5>
 								<input type="hidden" name="action" value="farm"> 
-								<input class="center-block" type="submit">
+								<input class="center-block btn btn-primary" type="submit">
 							</form>
 						</div> 
 
@@ -56,7 +56,7 @@ session_start();
 								<h3 class="text-center">Cave</h3>
 								<h5 class="text-center">(Earns 5-10 Gold)</h5>
 								<input type="hidden" name="action" value="cave">
-								<input class="center-block" type="submit">
+								<input class="center-block btn btn-primary" type="submit">
 							</form>
 						</div> 
 
@@ -65,7 +65,7 @@ session_start();
 								<h3 class="text-center">House</h3>
 								<h5 class="text-center">(Earns 2-5 Gold)</h5>
 								<input type="hidden" name="action" value="house">
-								<input class="center-block" type="submit">
+								<input class="center-block btn btn-primary" type="submit">
 							</form>
 						</div>
 
@@ -74,7 +74,7 @@ session_start();
 								<h3 class="text-center">Casino</h3>
 								<h5 class="text-center">(Earns 0-50 Gold)</h5>
 								<input type="hidden" name="action" value="casino">
-								<input class="center-block" type="submit">
+								<input class="center-block btn btn-primary" type="submit">
 							</form>
 						</div>
 					</div>
