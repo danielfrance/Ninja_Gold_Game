@@ -1,0 +1,24 @@
+/*  Ninja Game Validation  */
+
+
+
+#activities_log {
+	max-height: 200px;
+	overflow: scroll;
+	border: 1px solid grey;
+	padding: 0;
+}
+
+.building {
+	border: 1px solid cornflowerblue;
+	padding: 0 5px 0 5px;
+	height: 125px;
+}
+
+.lost {
+	color: #ff7070;
+}
+
+.won {
+	color:#4DB84D;
+}
