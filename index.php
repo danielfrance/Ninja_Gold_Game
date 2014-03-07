@@ -75,6 +75,7 @@ session_start();
 								<h5 class="text-center">(Earn/lose 0-50 Gold)</h5>
 								<input type="hidden" name="action" value="casino">
 								<input class="center-block btn btn-primary" type="submit" value="Roll the Dice">
+								<p class="text-center">casinos aren't built on winners</p>
 							</form>
 						</div>
 					</div>

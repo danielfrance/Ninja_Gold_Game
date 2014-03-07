@@ -48,8 +48,8 @@
 if (isset($_POST['action']) && $_POST['action'] == 'casino') 
 	{
 		$random_gold = rand(1,50); // random gold is generated
-		$random_chance = rand(1,2); // random chance is generated
-		if ($random_chance > 1) // the chance determines if the user wins gold or loses it
+		$random_chance = rand(1,10); // random chance is generated
+		if ($random_chance > 2) // the chance determines if the user wins gold or loses it
 			{
 				$_SESSION['total_gold'] = $_SESSION['total_gold'] -  $random_gold;
 				array_unshift($_SESSION['activities'], '<p class="lost">You entered a ' .  $_POST['action'] . " and you lost " . $random_gold . " gold" . "(" .  $time_stamp . ")</p>");
