@@ -22,4 +22,5 @@ I start by setting the time zone to Pacific time and create a variable to store 
 see if the session variables has not been set.  if they havent been, then we'll set the activities to a new array and 
 the users total gold to 0. After that, just a few simple IF statements.  
 
-array_unshift was a cool new function.  After I had built everything, I wasnt 
+array_unshift was a cool new function.  After I had built everything, the activity log wasn't populating with the most
+current activity.  I used array_unshift to push each new value in to the index position[0]
