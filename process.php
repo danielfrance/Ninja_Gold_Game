@@ -5,12 +5,7 @@
 	date_default_timezone_set('America/Los_Angeles');
 	$time_stamp = date("F j Y h:i");
 
-	if (isset($_POST['action']) && $_POST['action'] == 'reset')  
-	{
-		session_destroy();
-		header('location: index.php');
-	}
-
+	
 	if (!isset($_SESSION['activities']))
 	{
 		$_SESSION['activities'] = array();
@@ -52,7 +47,7 @@
 
 if (isset($_POST['action']) && $_POST['action'] == 'casino') 
 	{
-		$random_gold = rand(0,50); // random gold is generated
+		$random_gold = rand(1,50); // random gold is generated
 		$random_chance = rand(1,2); // random chance is generated
 		if ($random_chance > 1) // the chance determines if the user wins gold or loses it
 			{
@@ -70,6 +65,11 @@ if (isset($_POST['action']) && $_POST['action'] == 'casino')
 		}
 
 		
+if (isset($_POST['action']) && $_POST['action'] == 'reset')  
+	{
+		session_destroy();
+		header('location: index.php');
+	}
 
 
 

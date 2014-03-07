@@ -24,7 +24,7 @@ session_start();
 			<nav id="header" class="navbar navbar-default">
 				<div id="counter" class="navbar-header" >
 					<h1>Your Gold</h1>
-					<div style="border: 1px solid grey" class=" form-control">
+					<div  class=" form-control">
 					<?php 
 						if (isset($_SESSION['total_gold'])) 
 						{
@@ -47,7 +47,7 @@ session_start();
 								<h3 class="text-center">Farm</h3>
 								<h5 class="text-center">(Earns 10-20 Gold)</h5>
 								<input type="hidden" name="action" value="farm"> 
-								<input class="center-block btn btn-primary" type="submit">
+								<input class="center-block btn btn-primary" type="submit" value="Harvest">
 							</form>
 						</div> 
 
@@ -56,7 +56,7 @@ session_start();
 								<h3 class="text-center">Cave</h3>
 								<h5 class="text-center">(Earns 5-10 Gold)</h5>
 								<input type="hidden" name="action" value="cave">
-								<input class="center-block btn btn-primary" type="submit">
+								<input class="center-block btn btn-primary" type="submit" value="Explore">
 							</form>
 						</div> 
 
@@ -65,16 +65,16 @@ session_start();
 								<h3 class="text-center">House</h3>
 								<h5 class="text-center">(Earns 2-5 Gold)</h5>
 								<input type="hidden" name="action" value="house">
-								<input class="center-block btn btn-primary" type="submit">
+								<input class="center-block btn btn-primary" type="submit" value="Pillage">
 							</form>
 						</div>
 
 						<div class="building col-sm-2 col-md-2 col-md-offset-1 ">
 							<form action="process.php" method="post">
 								<h3 class="text-center">Casino</h3>
-								<h5 class="text-center">(Earns 0-50 Gold)</h5>
+								<h5 class="text-center">(Earn/lose 0-50 Gold)</h5>
 								<input type="hidden" name="action" value="casino">
-								<input class="center-block btn btn-primary" type="submit">
+								<input class="center-block btn btn-primary" type="submit" value="Roll the Dice">
 							</form>
 						</div>
 					</div>
@@ -102,7 +102,7 @@ session_start();
 				<form action="process.php" method="post" class="navbar-form navbar-right">
 					 	<div class="form-group">
 					 		<input class="form-control" type="hidden" name="action" value="reset">
-					 		<input class="btn btn-warning" type="submit" value="RESET">
+					 		<input class="btn btn-warning" type="submit" value="Play Again">
 					 	</div>
 					 	
 					 </form>
